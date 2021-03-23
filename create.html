@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/index.css" type="text/css">
+        <title>Crear</title>
+    </head>
+    <body>
+        <br>
+        <h1>Lunatic Shoes Manizales</h1>
+        <ul class="menu">
+            <li><a href="./catalog.html">Catalogo</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+        </ul>
+        <br>
+        <img class="image2" src="./images/logo.png" alt="logo">
+        <form action="create-client.php" method="POST">
+            Nombre <input type="text" name="nombres" required>
+            Apellidos <input type="text" name="apellidos" required>
+            <br> <br>
+            Sexo <select name="sexo" required>
+                    <option value="1">Hombre</option>
+                    <option value="2">Mujer</option>
+                    <option value="3">Intersexual</option>
+                </select>
+            Email <input type="email" name="email" required>
+            <br><br>
+            Telefono <input type="number" name="telefono" required>
+            Edad <input type="number" name="edad" required>
+            <br>
+            Tipo de Cliente <select name="tipo" required>
+                                <option value="1">Minorista</option>
+                                <option value="2">Mayorista</option>
+                                <option value="3">Antiguo</option>
+                            </select>
+            <br><br>
+            <input type="submit" value="Guardar Cliente">
+        </form>
+        <br><br>
+    </body>
+</html>
